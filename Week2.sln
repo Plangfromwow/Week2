@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeepGoing", "KeepGoing\Keep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentDatabase", "StudentDatabase\StudentDatabase.csproj", "{34389AF6-71A4-4A1E-8E69-C881BF53FF17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodValidation", "FoodValidation\FoodValidation.csproj", "{BA0DBAF5-1A03-446A-B66F-1AE39C0CB190}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{34389AF6-71A4-4A1E-8E69-C881BF53FF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34389AF6-71A4-4A1E-8E69-C881BF53FF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34389AF6-71A4-4A1E-8E69-C881BF53FF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0DBAF5-1A03-446A-B66F-1AE39C0CB190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0DBAF5-1A03-446A-B66F-1AE39C0CB190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0DBAF5-1A03-446A-B66F-1AE39C0CB190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0DBAF5-1A03-446A-B66F-1AE39C0CB190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
