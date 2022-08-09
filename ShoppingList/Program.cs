@@ -32,6 +32,7 @@ do {
     else if (response == "cart" || response == "c")
     {
         listCart();
+        Console.WriteLine();
     }
     else if (response == "add" || response == "add items" || response == "a")
     {
@@ -80,6 +81,8 @@ void addItemToCart(string itemEntry)
     if (menu.ContainsKey(itemEntry))
     {
         cart.Add(itemEntry);
+        Console.WriteLine($"{itemEntry} was added to your cart!");
+        Console.WriteLine();
     }
     else
     {
