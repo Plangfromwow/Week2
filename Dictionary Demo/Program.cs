@@ -33,3 +33,16 @@ foreach (var pair in foods)
     Console.WriteLine(pair.Key);
     Console.WriteLine(pair.Value);
 }
+
+// check if item exists in the dictionary 
+
+string entry = Console.ReadLine();
+if (foods.ContainsKey(entry))
+{
+    Console.WriteLine($"yes we have a favorite food for {entry}");
+    Console.WriteLine(foods[entry]);
+}
+else
+{
+    Console.WriteLine($"Sorry, we don't know a {entry}");
+}

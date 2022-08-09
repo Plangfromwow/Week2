@@ -1,19 +1,19 @@
-﻿// Array for comparrison 
-string[] myArray = { "Silly", "Array", "Things and what not" };
+﻿//// Array for comparrison 
+//string[] myArray = { "Silly", "Array", "Things and what not" };
 
-// print out one element
-Console.WriteLine(myArray[0]);
+//// print out one element
+//Console.WriteLine(myArray[0]);
 
-// changing one of the members
-myArray[1] = "ArraysAreDumb";
+//// changing one of the members
+//myArray[1] = "ArraysAreDumb";
 
-// looping through it
-for (int i = 0; i < myArray.Length; i++)
-{
-    Console.WriteLine(myArray[i]);
-}
+//// looping through it
+//for (int i = 0; i < myArray.Length; i++)
+//{
+//    Console.WriteLine(myArray[i]);
+//}
 
-Console.WriteLine();
+//Console.WriteLine();
 
 
 //  
