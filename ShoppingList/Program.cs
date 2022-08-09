@@ -36,15 +36,15 @@ do {
     else if (response == "add" || response == "add items" || response == "a")
     {
         Console.Write("Please type the item you would like to add: ");
-        string addItemEntry = Console.ReadLine().ToLower();
-        addItem(addItemEntry);
+        string addItemEntry = Console.ReadLine();
+        addItemToCart(addItemEntry);
 
     }
     else if (response == "total" || response == "t")
     {
         cartTotal = 0.00m;
-        addCartItems();
-        Console.WriteLine(cartTotal);
+        totalCartCost();
+        Console.WriteLine($"${cartTotal}");
     }
     else if (response == "exit" || response == "leave" || response == "e")
     {
@@ -58,11 +58,11 @@ do {
 } while (userLeaves);
 
 
+Console.WriteLine("Thank you for stopping by!");
 
 
 
-
-void addCartItems()
+void totalCartCost()
 {
     foreach (var item in cart)
     {
@@ -74,7 +74,7 @@ void addCartItems()
 
 
 
-void addItem(string itemEntry)
+void addItemToCart(string itemEntry)
 {
 
     if (menu.ContainsKey(itemEntry))
