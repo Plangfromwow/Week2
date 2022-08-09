@@ -7,7 +7,7 @@ numbers.Add(10, "Ten");
 numbers.Add(20, "Twenty");
 numbers.Add(100, "One Hundred");
 
-
+// list keys and values 
 Console.WriteLine("Here are the keys.");
 foreach (var num in numbers.Keys)
 {
@@ -19,3 +19,4 @@ foreach (var value in numbers.Values)
 {
     Console.WriteLine(value);
 }
+

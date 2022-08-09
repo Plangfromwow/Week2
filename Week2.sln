@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryDemo2", "Dictiona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryDemo3", "DictionaryDemo3\DictionaryDemo3.csproj", "{B197CD6C-E92F-4399-B972-457C624EF079}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingList", "ShoppingList\ShoppingList.csproj", "{76A31647-B721-4BDA-BA6A-989CBB656C27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{B197CD6C-E92F-4399-B972-457C624EF079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B197CD6C-E92F-4399-B972-457C624EF079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B197CD6C-E92F-4399-B972-457C624EF079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A31647-B721-4BDA-BA6A-989CBB656C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A31647-B721-4BDA-BA6A-989CBB656C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A31647-B721-4BDA-BA6A-989CBB656C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A31647-B721-4BDA-BA6A-989CBB656C27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
