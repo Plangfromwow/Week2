@@ -24,7 +24,11 @@ do
 
         if (reverseThis.Contains(" "))
         {
-            Console.WriteLine("Please only put in a word without spaces.");
+            validated = true;
+            string thisIsaSentence = reverseThis;
+            reverseSetnence(thisIsaSentence);
+            //validated = true;
+            
         }
         else if (reverseThis.Any(char.IsDigit))
         {
@@ -33,24 +37,21 @@ do
         else
         {
             validated = true;
+            reversed = reverseWord(reverseThis);
+            Console.WriteLine($"Your word reversed is, {reversed}. Isn't that magical?");
         }
 
     }
-    reverseWord(reverseThis);
-
-    Console.WriteLine($"Your word reversed is, {reversed}. Isn't that magical?");
+    
 
 } while (KeepGoing());
-
-
-
-
 
 
 static bool KeepGoing()
 {
     while (true)
     {
+        Console.WriteLine();
         // Print out message asking if user wants to continue
         Console.WriteLine("Would you like to try again? (y/n)");
         // Ask the user for their input
@@ -74,12 +75,9 @@ static bool KeepGoing()
     }
 }
 
-
-
-
-
-void reverseWord(string userInput)
+static string reverseWord(string userInput)
 {
+    string reversed = "";
     Stack<char> chars = new Stack<char>();
     char[] charsArray;
     charsArray = userInput.ToCharArray();
@@ -89,9 +87,33 @@ void reverseWord(string userInput)
         chars.Push(charsArray[i]);
     }
 
-
     while (chars.Count > 0)
     {
         reversed = reversed + chars.Pop();
     }
+
+    return reversed;
+}
+
+
+void reverseSetnence(string userInput)
+{
+    
+    Queue<string> newWord = new Queue<string>();
+    string newSentence = "";
+    string[] words = userInput.Split(" ");
+  
+
+    for (int i = 0; i < words.Length; i++)
+    {
+        
+         string reversedWords = reverseWord(words[i]);
+         newWord.Enqueue(reversedWords);  
+    }
+
+    foreach (var word in newWord)
+    {
+        Console.Write($" {word}");
+    }
+
 }
