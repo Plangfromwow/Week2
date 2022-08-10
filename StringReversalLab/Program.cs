@@ -5,6 +5,8 @@
 
 
 
+using System.Text.RegularExpressions;
+
 Console.WriteLine("Welcome to the word Reverser!");
 string reversed = "";
 string reverseThis = "";
@@ -23,6 +25,10 @@ do
         if (reverseThis.Contains(" "))
         {
             Console.WriteLine("Please only put in a word without spaces.");
+        }
+        else if (reverseThis.Any(char.IsDigit))
+        {
+            Console.WriteLine("Please only put in a word. No Numbers.");
         }
         else
         {
