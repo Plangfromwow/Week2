@@ -113,7 +113,7 @@ void reverseSetnence(string userInput)
 
     foreach (var word in newWord)
     {
-        Console.Write($" {word}");
+        Console.Write($"{word} ");
     }
 
 }
