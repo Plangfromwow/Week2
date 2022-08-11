@@ -45,7 +45,7 @@ foreach (var item in salary)
 }
 
 
-Dictionary of favorite numbers 
+Console.WriteLine("Dictionary of favorite numbers"); 
 Dictionary<string, List<int>> Favorites = new Dictionary<string, List<int>>();
 
 Favorites["Paul"] = new List<int>() { 10, 100, 1000, 100000 };
