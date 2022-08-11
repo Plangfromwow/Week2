@@ -58,10 +58,7 @@ do {
 
 } while (userLeaves);
 
-
 Console.WriteLine("Thank you for stopping by!");
-
-
 
 void totalCartCost()
 {
@@ -72,8 +69,6 @@ void totalCartCost()
         
     }
 }
-
-
 
 void addItemToCart(string itemEntry)
 {
@@ -90,8 +85,6 @@ void addItemToCart(string itemEntry)
     }
 }
 
-
-
 void listCart()
 {
     Console.WriteLine("List of your currently selected items:");
@@ -100,8 +93,6 @@ void listCart()
         Console.WriteLine(item);
     }
 }
-
-
 
  void listMenu()
 {
